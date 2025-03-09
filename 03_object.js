@@ -8,11 +8,11 @@ the object initializer / literal syntax. */
  tells us that we can create only one instance of 
  a class and that instance can be accessed globally. */
 
- // constructor se singleton banta hai
+// constructor se singleton banta hai
 // object.create
- // object literals
+// object literals
 
-const mySym = Symbol("key1")
+/* const mySym = Symbol("key1")
 
  const JsUser = {
     // define keys and values
@@ -48,4 +48,46 @@ JsUser.greetingTwo = function(){
     
 }
 console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greetingTwo());*/
+
+/* object litrals: In JavaScript, an object literal is 
+a syntax that defines an object using key-value pairs */
+
+// const tinderUser = new object()
+
+const tinderUser = {};
+
+tinderUser.id = "123abc";
+tinderUser.name = "Vinode";
+tinderUser.isLoggedIn = false;
+
+// console.log(tinderUser);
+
+const regularUser = {
+  email: "pradeepp@gmail.com",
+  fullname: {
+    userfullname: {
+      firstname: "Pradeep",
+      lastname: "kumar",
+    },
+  },
+};
+
+// console.log(regularUser.fullname.userfullname.firstname);
+
+const obj1 = { 1: "a", 2: "b" };
+const obj2 = { 3: "a", 4: "b" };
+const obj3 = { 5: "a", 6: "b" };
+
+// const obj3 = {obj1, obj2}
+// const obj4 = Object.assign(obj1, obj2, obj3)
+
+const obj4 = { ...obj1, ...obj2, ...obj3 };
+// console.log(obj4);
+
+const users = [
+  {
+    id: 1,
+    email: "p@gmail.com",
+  },
+];
