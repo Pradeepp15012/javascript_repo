@@ -26,9 +26,19 @@ const user = {
 
 // Arrow function
 
-const chai = () =>{
-    let username = "Pradeep"
-    console.log(this.username);
+// const chai = () =>{
+//     let username = "Pradeep"
+//     console.log(this.username);
     
-}
-chai()
+// }
+// chai()
+
+
+/** Implicit return  */
+// const addTwo = (num1, num2) =>  num1 + num2
+
+// const addTwo = (num1, num2) => ( num1 + num2 )
+
+const addTwo = (num1, num2 ) => ({ username: "Prdeep"})
+
+console.log(addTwo(3, 5));
