@@ -35,14 +35,53 @@ const result = addTwoNumbers(4, 6)
 
 // console.log("Result: ", result);
 
-function loginUserMessage(username = "sam"){
-    // if(username === undefined){
-    if(!username){
-        console.log("Please enter a username");
-        return
-    }
-    return `${username} just logged in`
-}
+// function loginUserMessage(username = "sam"){
+//     // if(username === undefined){
+//     if(!username){
+//         console.log("Please enter a username");
+//         return
+//     }
+//     return `${username} just logged in`
+// }
 // console.log(loginUserMessage(""));
 
-console.log(loginUserMessage("pradeep"));
+// console.log(loginUserMessage("pradeep"));
+
+/** Rest Operator and spread operator */
+/* 1. Rest Operator (...) 
+The rest operator collects multiple elements into a single array or object. */
+
+/** 2. Spread Operator (...)
+The spread operator expands an array or object into individual elements. */
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500))
+
+const user = {
+    username: "Pradeep",
+    prices: 200 
+}
+
+function handleobject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price} `);
+    
+}
+
+// handleobject(user)
+
+handleobject({
+    username: "sam",
+    price: 499
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
+
