@@ -42,7 +42,7 @@ else{
     
 } */
 
-const userloggedIn = true
+    /** const userloggedIn = true
 
 const debitCard = true
 const loggedInFromGoogle = false
@@ -55,4 +55,88 @@ if(userloggedIn && debitCard){
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User: logged in");
     
+} */
+
+    
+// switch (key){
+//     case value:
+
+//         break;
+//     default:
+//         break;
+
+// }
+
+/* const month = 3
+
+switch(month){
+    case 1:
+        console.log("january");
+        
+        break;
+
+    case 2:
+        console.log("february");
+        break;
+    
+    case 3:
+        console.log("March");
+        break;
+
+    case 4: 
+        console.log("April");
+        break;
+        
+        
+    
+    default:
+        console.log("default case match");
+        
+        break;
+}*/
+
+const usesrEmail = "pradeep.ai"
+
+if(usesrEmail) {
+    console.log("Got user email");
+    
 }
+else {
+    console.log("Don't have user email");
+    
+}
+
+// falsy value
+// false, 0, -0, BigInt, 0n, "", null, undefined, NaN
+
+//truethy values
+// "0", 'false', " ", [], {}, function(){}
+
+// if(usesrEmail.length === 0){
+//     console.log("Array is empty");
+    
+// }
+
+// const emptyObj = {}
+
+// if(Object.keys(emptyObj).length === 0){
+//     console.log("object is empty");
+    
+// }
+
+// Nullish coalescing operator (??); null undefined
+
+let val1;
+
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? 15
+
+val1 = null ?? 10 ?? 15
+
+console.log(val1);
+
+
+// Ternaiary operator
+// condition ? true : false
+
