@@ -1,13 +1,13 @@
-function sayMyName(){
-    console.log("P");
-    console.log("R");
-    console.log("A");
-    console.log("D");
-    console.log("E");
-    console.log("E");
-    console.log("P");
+// function sayMyName(){
+//     console.log("P");
+//     console.log("R");
+//     console.log("A");
+//     console.log("D");
+//     console.log("E");
+//     console.log("E");
+//     console.log("P");
     
-}
+// }
 
 // sayMyName()
 
@@ -26,13 +26,13 @@ use argument kahte hai
 
 // addTwoNumbers(4, 6)
 
-function addTwoNumbers(number1, number2){
+/* function addTwoNumbers(number1, number2){
     // let result = number1 + number2
     // console.log(result);
     return number1 + number2
 }
 const result = addTwoNumbers(4, 6)
-
+*/
 // console.log("Result: ", result);
 
 // function loginUserMessage(username = "sam"){
@@ -53,35 +53,49 @@ The rest operator collects multiple elements into a single array or object. */
 
 /** 2. Spread Operator (...)
 The spread operator expands an array or object into individual elements. */
-function calculateCartPrice(...num1){
-    return num1
-}
+// function calculateCartPrice(...num1){
+//     return num1
+// }
 
 // console.log(calculateCartPrice(200, 400, 500))
 
-const user = {
-    username: "Pradeep",
-    prices: 200 
-}
+// const user = {
+//     username: "Pradeep",
+//     prices: 200 
+// }
 
-function handleobject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price} `);
+// function handleobject(anyobject){
+//     console.log(`Username is ${anyobject.username} and price is ${anyobject.price} `);
     
-}
+// }
 
 // handleobject(user)
 
-handleobject({
-    username: "sam",
-    price: 499
-})
+// handleobject({
+//     username: "sam",
+//     price: 499
+// })
 
-const myNewArray = [200, 400, 100, 600]
+// const myNewArray = [200, 400, 100, 600]
 
-function returnSecondValue(getArray){
-    return getArray[1]
-}
+// function returnSecondValue(getArray){
+//     return getArray[1]
+// }
 
-// console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+// // console.log(returnSecondValue(myNewArray));
+// console.log(returnSecondValue([200, 400, 500, 1000]));
 
+/** Immediately invoked function expression */
+
+(function abc(){
+    console.log(`DB CONNECTED`);
+    
+})();
+
+// abc()
+
+// (function aurcode() {
+((name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+    
+})('Pradeep')
